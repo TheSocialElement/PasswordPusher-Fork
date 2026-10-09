@@ -42,9 +42,6 @@
   <div class="container-fluid d-flex flex-column min-vh-100 justify-content-center align-items-center">
     <%= render partial: 'shared/alerts' %>
     <main class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 text-center">
-      <%= link_to root_path(locale: locale.to_s), hreflang: locale.to_s do %>
-        <%= render partial: "shared/brand_logo", locals: { height: nil, css_class: "", style: "max-height: 120px; max-width: 100%; height: auto;" } %>
-      <% end %>
 
       <%= yield %>
 
